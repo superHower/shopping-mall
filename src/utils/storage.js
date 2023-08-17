@@ -4,9 +4,8 @@ const HISTORY_KEY = 'hm_history_list'
 
 // 获取个人信息
 export const getInfo = () => {
-  const defaultObj = { token: '', userId: '' }
   const result = localStorage.getItem(INFO_KEY)
-  return result ? JSON.parse(result) : defaultObj
+  return result ? JSON.parse(result) : { token: '', userId: '' }
 }
 
 // 设置个人信息

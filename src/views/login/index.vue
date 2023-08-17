@@ -120,8 +120,6 @@ export default {
       this.$toast('登录成功')
 
       // 进行判断，看地址栏有无回跳地址
-      // 1. 如果有   => 说明是其他页面，拦截到登录来的，需要回跳
-      // 2. 如果没有 => 正常去首页
       const url = this.$route.query.backUrl || '/'
       this.$router.replace(url)
     }
