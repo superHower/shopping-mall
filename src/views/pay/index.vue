@@ -234,7 +234,7 @@ export default {
     font-size: 14px;
     line-height: 1.3;
     padding: 10px;
-    padding-right: 0px;
+    padding-right: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

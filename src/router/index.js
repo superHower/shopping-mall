@@ -1,20 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-// 一级路由
-import Login from '@/views/login'
-import Layout from '@/views/layout'
-import Search from '@/views/search'
-import SearchList from '@/views/search/list'
-import ProDetail from '@/views/prodetail'
-import Pay from '@/views/pay'
-import MyOrder from '@/views/myorder'
 // 二级路由
+import Layout from '@/views/layout'
 import Home from '@/views/layout/home'
 import Category from '@/views/layout/category'
 import Cart from '@/views/layout/cart'
 import User from '@/views/layout/user'
+
 // 登陆权证
 import store from '@/store'
+
+// 一级路由
+const Login = () => import('@/views/login')
+const Search = () => import('@/views/search')
+const SearchList = () => import('@/views/search/list')
+const ProDetail = () => import('@/views/prodetail')
+const Pay = () => import('@/views/pay')
+const MyOrder = () => import('@/views/myorder')
 
 Vue.use(VueRouter)
 

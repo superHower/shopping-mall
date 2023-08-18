@@ -4,3 +4,6 @@ import request from '@/utils/request'
 export const getAddressList = () => {
   return request.get('/address/list')
 }
+export const addAddress = () => {
+  return request.post('/address/list')
+}
