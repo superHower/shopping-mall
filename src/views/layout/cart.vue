@@ -92,7 +92,6 @@ export default {
       this.$store.commit('cart/toggleAllCheck', !this.isAllChecked)
     },
     changeCount (goodsNum, goodsId, goodsSkuId) {
-      // console.log(goodsNum, goodsId, goodsSkuId)
       // 调用 vuex 的 action，进行数量的修改
       this.$store.dispatch('cart/changeCountAction', {
         goodsNum,
